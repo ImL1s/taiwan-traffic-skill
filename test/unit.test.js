@@ -327,7 +327,7 @@ describe('URL Constants', () => {
 // ═══════════════════════════════════════════════════════════════
 
 describe('News parser (list_news.js internal logic)', () => {
-  // Simulate parseNews behavior directly
+  // SYNC: must match list_news.js parseNews() at line 29
   function parseNews(item, source) {
     return {
       newsId: item.NewsID || item.NewsId || '',
@@ -380,6 +380,7 @@ describe('News parser (list_news.js internal logic)', () => {
 });
 
 describe('Event parser (list_events.js internal logic)', () => {
+  // SYNC: must match list_events.js parseEvent() at line 29
   function parseEvent(item, source) {
     return {
       eventId: item.LiveEventID || item.EventID || '',
@@ -392,8 +393,8 @@ describe('Event parser (list_events.js internal logic)', () => {
       startTime: item.StartTime || null,
       endTime: item.EndTime || null,
       updateTime: item.UpdateTime || null,
-      longitude: item.PositionLon || null,
-      latitude: item.PositionLat || null,
+      longitude: item.PositionLon ?? null,
+      latitude: item.PositionLat ?? null,
       source,
     };
   }
@@ -429,6 +430,7 @@ describe('Event parser (list_events.js internal logic)', () => {
 });
 
 describe('Weather parser (get_weather.js internal logic)', () => {
+  // SYNC: must match get_weather.js parseStation() at line 32
   function parseStation(station) {
     const weather = station.WeatherElement || {};
     const geo = station.GeoInfo || {};

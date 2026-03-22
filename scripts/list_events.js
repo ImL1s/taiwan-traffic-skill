@@ -38,8 +38,8 @@ function parseEvent(item, source) {
     startTime: item.StartTime || null,
     endTime: item.EndTime || null,
     updateTime: item.UpdateTime || null,
-    longitude: item.PositionLon || null,
-    latitude: item.PositionLat || null,
+    longitude: item.PositionLon ?? null,
+    latitude: item.PositionLat ?? null,
     source,
   };
 }
