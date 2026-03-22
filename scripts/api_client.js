@@ -179,8 +179,8 @@ function parseCctv(item, source) {
   return {
     id: item.CCTVID || '',
     name,
-    lat: item.PositionLat || 0,
-    lon: item.PositionLon || 0,
+    lat: item.PositionLat ?? 0,
+    lon: item.PositionLon ?? 0,
     streamUrl: item.VideoStreamURL || null,
     roadName: item.RoadName || null,
     direction: DIRECTION_MAP[item.RoadDirection] || item.RoadDirection || null,
