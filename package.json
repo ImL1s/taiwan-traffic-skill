@@ -1,0 +1,6 @@
+{
+  "name": "taiwan-traffic",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for Taiwan real-time traffic data (CCTV, news, events, weather)",
+  "dependencies": {}
+}
