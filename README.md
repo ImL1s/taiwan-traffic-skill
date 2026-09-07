@@ -74,6 +74,12 @@ node scripts/list_news.js --limit=5
 | Road Events | TDX LiveEvent API (v1) | OAuth 2.0 |
 | Weather | [CWA 氣象開放資料](https://opendata.cwa.gov.tw/) | API Key |
 
+---
+
+## Support
+
+If this project saved you some time, you can [buy me a coffee](https://buymeacoffee.com/iml1s).
+
 ## License
 
 MIT — see [LICENSE](./LICENSE)
